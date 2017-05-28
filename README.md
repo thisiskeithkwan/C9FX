@@ -12,3 +12,5 @@ The alpha version provides
 2. Instant currency withdrawal appointment service.
 3. FX future contracts
 
+![alt text](https://github.com/thisiskeithkwan/C9FX/blob/master/C9FXconversation.gif)
+
