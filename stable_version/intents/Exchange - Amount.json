@@ -1,0 +1,164 @@
+{
+  "userSays": [
+    {
+      "id": "dafcdcfd-2c07-48d2-9616-285c8e167617",
+      "data": [
+        {
+          "text": "3462345234",
+          "alias": "Amount",
+          "meta": "@sys.number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "3dac0bbd-7c83-4aef-99e8-a52620d9a530",
+      "data": [
+        {
+          "text": "2000",
+          "alias": "Amount",
+          "meta": "@sys.number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "3f460cce-6abb-4c35-8fa0-36b9ec58ecb6",
+      "data": [
+        {
+          "text": "600",
+          "alias": "Amount",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "96ec93ba-695c-46d7-be98-061331f6b31c",
+      "data": [
+        {
+          "text": "2345",
+          "alias": "Amount",
+          "meta": "@sys.number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "4d64e2c5-8dc3-4f4f-b13e-e737297a0857",
+      "data": [
+        {
+          "text": "200",
+          "alias": "Amount",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5c984ad6-8705-4e98-a632-9319946bcbcf",
+      "data": [
+        {
+          "text": "2345234",
+          "alias": "Amount",
+          "meta": "@sys.number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5ceec1f2-b2b3-401f-a1af-4f722887de7d",
+      "data": [
+        {
+          "text": "300",
+          "alias": "Amount",
+          "meta": "@sys.number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    }
+  ],
+  "id": "b9802fa1-12ca-4b14-a500-27577770efd8",
+  "parentId": "82030a10-2303-4e2e-a4a2-8586e88e52bd",
+  "rootParentId": "319b4ac5-1792-4c84-8b1c-15e531df272d",
+  "name": "Exchange - Amount",
+  "auto": true,
+  "contexts": [
+    "Exchange-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Welcome.Welcome-custom.Exchange-custom",
+      "affectedContexts": [
+        {
+          "name": "Exchange-Amount-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "Amount",
+          "value": "$Amount",
+          "prompts": [
+            "How much JPY would you like to order? Just type the value (10000)"
+          ]
+        },
+        {
+          "dataType": "@Currencies",
+          "name": "Currencies_FROM",
+          "value": "#Exchange-followup.Currencies_FROM"
+        },
+        {
+          "dataType": "@Currencies",
+          "name": "Currencies_TO",
+          "value": "#Exchange-followup.Currencies_TO"
+        }
+      ],
+      "messages": [
+        {
+          "type": 1,
+          "platform": "facebook",
+          "subtitle": "The amount of #Exchange-followup.Currencies_TO you want to exchange is $Amount . When and where would you like to collect the foreign exchange?  A. 28-05-2017 MongKok B. 29-05-2017 Central C. 30-05-2017 KwunTong",
+          "buttons": []
+        },
+        {
+          "type": 2,
+          "platform": "facebook",
+          "title": "",
+          "replies": [
+            "28-05-2017 MongKok",
+            "29-05-2017 Central",
+            "30-05-2017 KwunTong"
+          ]
+        },
+        {
+          "type": 0,
+          "speech": "The amount of #Exchange-followup.Currencies_TO you want to exchange is $Amount .\nWhen and where would you like to collect the foreign exchange?\n\nA. 28-05-2017 MongKok\nB. 29-05-2017 Central\nC. 30-05-2017 KwunTong"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

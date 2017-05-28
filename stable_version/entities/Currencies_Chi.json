@@ -1,0 +1,47 @@
+{
+  "id": "1ca62ffd-bca3-4d9a-b83c-54a5e139f31d",
+  "name": "Currencies_Chi",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "港幣",
+      "synonyms": [
+        "港幣",
+        "港元",
+        "港紙"
+      ]
+    },
+    {
+      "value": "日元",
+      "synonyms": [
+        "日元"
+      ]
+    },
+    {
+      "value": "澳元",
+      "synonyms": [
+        "澳元"
+      ]
+    },
+    {
+      "value": "美元",
+      "synonyms": [
+        "美元"
+      ]
+    },
+    {
+      "value": "英磅",
+      "synonyms": [
+        "英磅"
+      ]
+    },
+    {
+      "value": "歐羅",
+      "synonyms": [
+        "歐羅"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

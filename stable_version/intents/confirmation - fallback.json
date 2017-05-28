@@ -1,0 +1,30 @@
+{
+  "userSays": [],
+  "id": "b9e244ec-c0a8-4aec-8dda-fb3c3fa3c75c",
+  "parentId": "18203f78-cf4c-4659-8061-eb30a1524006",
+  "rootParentId": "8fa75826-3b39-418a-af48-b7f98ef67ce7",
+  "name": "confirmation - fallback",
+  "auto": false,
+  "contexts": [
+    "confirmation-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "hi.hi-custom.selectamount-custom.selectbranches-custom.confirmation-fallback",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": []
+}

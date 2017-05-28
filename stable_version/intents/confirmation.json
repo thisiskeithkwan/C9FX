@@ -1,0 +1,137 @@
+{
+  "userSays": [
+    {
+      "id": "a65f0e9b-ee59-42ca-96b2-17504aa8f5e2",
+      "data": [
+        {
+          "text": "30/5",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Kwun Tong",
+          "alias": "branch",
+          "meta": "@Branches",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "999f1bc1-2b7d-4ebe-b2bb-734d82e25159",
+      "data": [
+        {
+          "text": "29/5",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Central",
+          "alias": "branch",
+          "meta": "@Branches",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "fdc50880-176e-43c9-9059-361a4fadea35",
+      "data": [
+        {
+          "text": "28/5",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "MongKok",
+          "alias": "branch",
+          "meta": "@Branches",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    }
+  ],
+  "id": "18203f78-cf4c-4659-8061-eb30a1524006",
+  "parentId": "0943fa08-478c-4e71-bdba-ab3d89de370d",
+  "rootParentId": "8fa75826-3b39-418a-af48-b7f98ef67ce7",
+  "name": "confirmation",
+  "auto": true,
+  "contexts": [
+    "selectbranches-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "hi.hi-custom.selectamount-custom.selectbranches-custom",
+      "affectedContexts": [
+        {
+          "name": "confirmation-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@Branches",
+          "name": "branch",
+          "value": "$branch"
+        },
+        {
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "isList": false
+        },
+        {
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "#selectbranches-followup.number"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "platform": "facebook",
+          "speech": [
+            "You have input all the information as below.\nExchange currency: HKD/JPY\nExchange amount: $number\nTime to collect: $date\nBranch: $branch",
+            "If all the information is correct, please enter \"confirm\". If you would like to cancel the service, please enter \"cancel\"."
+          ]
+        },
+        {
+          "type": 2,
+          "platform": "facebook",
+          "title": "",
+          "replies": [
+            "Confirm",
+            "Cancel"
+          ]
+        },
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

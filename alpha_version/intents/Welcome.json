@@ -1,0 +1,67 @@
+{
+  "userSays": [
+    {
+      "id": "e9bab19e-d96b-48ad-ac3f-738235c1aa4f",
+      "data": [
+        {
+          "text": "hihi"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ddd64993-29eb-4329-9a26-a4886b6fc799",
+      "data": [
+        {
+          "text": "Hi",
+          "alias": "Greetings",
+          "meta": "@Greetings",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "319b4ac5-1792-4c84-8b1c-15e531df272d",
+  "name": "Welcome",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [
+        {
+          "name": "Welcome-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@Greetings",
+          "name": "Greetings",
+          "value": "$Greetings",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "Welcome to C9FX! What can I help you?"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}

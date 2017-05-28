@@ -1,0 +1,62 @@
+{
+  "userSays": [
+    {
+      "id": "a003009b-72ee-4990-9da0-98ce3589ae12",
+      "data": [
+        {
+          "text": "HKD for JPY"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "5b863fd3-f9a7-4342-8b74-9141a693813f",
+  "parentId": "8fa75826-3b39-418a-af48-b7f98ef67ce7",
+  "rootParentId": "8fa75826-3b39-418a-af48-b7f98ef67ce7",
+  "name": "select amount",
+  "auto": true,
+  "contexts": [
+    "hi-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "hi.hi-custom",
+      "affectedContexts": [
+        {
+          "name": "selectamount-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "platform": "facebook",
+          "speech": "The current spot rate of HKD/JPY is 14,\nHow much do you want to exchange?"
+        },
+        {
+          "type": 2,
+          "platform": "facebook",
+          "title": "Choose or type an amount",
+          "replies": [
+            "10000",
+            "50000",
+            "100000"
+          ]
+        },
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

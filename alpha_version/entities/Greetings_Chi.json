@@ -1,0 +1,15 @@
+{
+  "id": "b459cd99-0afc-4fbc-b23d-3f69a75d2348",
+  "name": "Greetings_Chi",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "你好",
+      "synonyms": [
+        "你好"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

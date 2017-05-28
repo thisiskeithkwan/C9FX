@@ -1,0 +1,160 @@
+{
+  "userSays": [
+    {
+      "id": "5d5ee335-8e7d-4bb9-b2d1-3a70fe89f86f",
+      "data": [
+        {
+          "text": "確認"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "1cc0a5b5-e47a-4878-9976-de3ffd28d778",
+      "data": [
+        {
+          "text": "yes"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "97f99f27-1bd2-4f95-bc34-71414dd5826b",
+      "data": [
+        {
+          "text": "do it"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "942ca518-c590-4ac8-9b80-90cd2bc46423",
+      "data": [
+        {
+          "text": "sure"
+        }
+      ],
+      "isTemplate": false,
+      "count": 2
+    },
+    {
+      "id": "4bc65ccc-ae5b-461e-beb0-ce2ee60c81a5",
+      "data": [
+        {
+          "text": "exactly"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "fc469439-b6e9-4c7b-87cd-a53d3c492f01",
+      "data": [
+        {
+          "text": "confirm"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "3615624d-6b6c-4b73-aaf4-c8b9a95485c9",
+      "data": [
+        {
+          "text": "of course"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ff59a156-54ce-4fac-bfd8-4cd84dec7e8b",
+      "data": [
+        {
+          "text": "sounds good"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c35a2ea1-c4c3-4098-98b6-2d1352411ed8",
+      "data": [
+        {
+          "text": "that\u0027s correct"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "7ee444c5-27ae-44a4-b073-7086d54e55bb",
+      "data": [
+        {
+          "text": "I don\u0027t mind"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "505c4163-58c9-413a-9925-7223e290d754",
+      "data": [
+        {
+          "text": "I agree"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    }
+  ],
+  "id": "72381af7-09aa-4e46-9a1d-978b31797573",
+  "name": "Exchange_Chi - time - yes",
+  "auto": true,
+  "contexts": [
+    "Exchange_Chi-time-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Welcome_Chi.Welcome_Chi-custom.Exchange_Chi-custom.Exchange_Chi-Amount-custom.Exchange_Chi-time-yes",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@Branches_Chi",
+          "name": "Branches_Chi",
+          "value": "#Exchange_Chi-time-followup.Branches_Chi"
+        },
+        {
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "#Exchange_Chi-time-followup.date"
+        },
+        {
+          "dataType": "@sys.number",
+          "name": "Amount_Chi",
+          "value": "#Exchange_Chi-time-followup.Amount_Chi"
+        },
+        {
+          "dataType": "@Currencies_Chi",
+          "name": "Currencies_Chi_TO",
+          "value": "#Exchange_Chi-time-followup.Currencies_Chi_TO"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "多謝你選用恆生的服務，有預約提存的資料細列如下：\n分行: #Exchange_Chi-time-followup.Branches_Chi\n日期: #Exchange_Chi-time-followup.date \n服務: Foreign Currency Withdrawal\n總金額: #Exchange_Chi-time-followup.Amount_Chi #Exchange_Chi-time-followup.Currencies_Chi_TO"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

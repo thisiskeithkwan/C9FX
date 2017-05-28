@@ -1,0 +1,148 @@
+{
+  "userSays": [
+    {
+      "id": "4fb5b5aa-9534-4c90-9964-4c231b047fad",
+      "data": [
+        {
+          "text": "Exchange",
+          "alias": "Services",
+          "meta": "@Services",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "HKD",
+          "alias": "Currencies_FROM",
+          "meta": "@Currencies",
+          "userDefined": false
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "USD",
+          "alias": "Currencies_TO",
+          "meta": "@Currencies",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "b1887447-9c34-4503-949b-c733d7b85e35",
+      "data": [
+        {
+          "text": "exchange",
+          "alias": "Services",
+          "meta": "@Services",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "hkd",
+          "alias": "Currencies_FROM",
+          "meta": "@Currencies",
+          "userDefined": false
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "jpy",
+          "alias": "Currencies_TO",
+          "meta": "@Currencies",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d173dbff-e206-4d8a-b84a-dfe504f55ede",
+      "data": [
+        {
+          "text": "Exchange",
+          "alias": "Services",
+          "meta": "@Services",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "USD",
+          "alias": "Currencies_FROM",
+          "meta": "@Currencies",
+          "userDefined": true
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "HKD",
+          "alias": "Currencies_TO",
+          "meta": "@Currencies",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "82030a10-2303-4e2e-a4a2-8586e88e52bd",
+  "name": "Exchange",
+  "auto": true,
+  "contexts": [
+    "Welcome-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Welcome.Welcome-custom",
+      "affectedContexts": [
+        {
+          "name": "Exchange-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@Services",
+          "name": "Services",
+          "value": "$Services"
+        },
+        {
+          "dataType": "@Currencies",
+          "name": "Currencies_FROM",
+          "value": "$Currencies_FROM"
+        },
+        {
+          "dataType": "@Currencies",
+          "name": "Currencies_TO",
+          "value": "$Currencies_TO"
+        },
+        {
+          "name": "Rate",
+          "value": "14"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "The spot rate of $Currencies_FROM / $Currencies_TO is 14,\nHow much do you want to exchange?"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,106 @@
+{
+  "userSays": [
+    {
+      "id": "6623f020-e8c9-44ec-b8b9-f5b587dccf32",
+      "data": [
+        {
+          "text": "100000",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "904506e8-8431-4dd0-b692-0779ea4ed885",
+      "data": [
+        {
+          "text": "50000",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "34615bd5-e244-4826-8f3d-cf17724a95c0",
+      "data": [
+        {
+          "text": "10000",
+          "alias": "number",
+          "meta": "@sys.number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "0943fa08-478c-4e71-bdba-ab3d89de370d",
+  "parentId": "5b863fd3-f9a7-4342-8b74-9141a693813f",
+  "rootParentId": "8fa75826-3b39-418a-af48-b7f98ef67ce7",
+  "name": "select branches",
+  "auto": true,
+  "contexts": [
+    "selectamount-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "hi.hi-custom.selectamount-custom",
+      "affectedContexts": [
+        {
+          "name": "selectbranches-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@sys.number",
+          "name": "Amount",
+          "value": "$Amount"
+        },
+        {
+          "dataType": "@sys.number",
+          "name": "number",
+          "value": "$number",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "platform": "facebook",
+          "speech": "The amount of HKD/JPY you want to exchange is $number .\nWhen and where would you like to collect the foreign exchange?"
+        },
+        {
+          "type": 2,
+          "platform": "facebook",
+          "title": "",
+          "replies": [
+            "28/5 MongKok",
+            "29/5 Central",
+            "30/5 KwunTong"
+          ]
+        },
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": [
+        "facebook"
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

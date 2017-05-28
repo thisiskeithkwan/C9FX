@@ -1,0 +1,33 @@
+{
+  "id": "b1951d31-cf6d-4bfa-a8cb-a1b04d61173d",
+  "name": "Branches_Chi",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "九龍",
+      "synonyms": [
+        "九龍"
+      ]
+    },
+    {
+      "value": "中環",
+      "synonyms": [
+        "中環"
+      ]
+    },
+    {
+      "value": "觀塘",
+      "synonyms": [
+        "觀塘"
+      ]
+    },
+    {
+      "value": "旺角",
+      "synonyms": [
+        "旺角"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

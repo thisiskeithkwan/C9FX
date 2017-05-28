@@ -1,0 +1,87 @@
+{
+  "userSays": [
+    {
+      "id": "674e4724-35c3-4221-b046-7c8d2ac25317",
+      "data": [
+        {
+          "text": "28-05-2017",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Place",
+          "alias": "Branches",
+          "meta": "@Branches",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "64aaf642-7c6e-4287-881e-52e010e7062d",
+  "parentId": "b9802fa1-12ca-4b14-a500-27577770efd8",
+  "rootParentId": "319b4ac5-1792-4c84-8b1c-15e531df272d",
+  "name": "Exchange - time",
+  "auto": true,
+  "contexts": [
+    "Exchange-Amount-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Welcome.Welcome-custom.Exchange-custom.Exchange-Amount-custom",
+      "affectedContexts": [
+        {
+          "name": "Exchange-time-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@Currencies",
+          "name": "CURRENCIES_FROM",
+          "value": "#Exchange-Amount-followup.CURRENCIES_FROM"
+        },
+        {
+          "dataType": "@Currencies",
+          "name": "CURRENCIES_TO",
+          "value": "#Exchange-Amount-followup.CURRENCIES_TO"
+        },
+        {
+          "dataType": "@sys.number",
+          "name": "Amount",
+          "value": "#Exchange-Amount-followup.Amount"
+        },
+        {
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date.original",
+          "isList": false
+        },
+        {
+          "dataType": "@Branches",
+          "name": "Branches",
+          "value": "$Branches",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "You have input all the information as below.\nExchange currency: #Exchange-Amount-followup.CURRENCIES_FROM to #Exchange-Amount-followup.CURRENCIES_TO\nExchange amount: #Exchange-Amount-followup.Amount\nTime to collect: $date\nBranch: $Branches\n\nIf all the information is correct, please enter \"confirm\". If not, please enter \"return\" and re-select a new appointment time. If you would like to cancel the service, please enter \"cancel\"."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

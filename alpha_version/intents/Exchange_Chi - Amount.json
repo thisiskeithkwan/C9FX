@@ -1,0 +1,66 @@
+{
+  "userSays": [
+    {
+      "id": "a04d0f53-534b-4d0a-85c4-d194881d00b1",
+      "data": [
+        {
+          "text": "200",
+          "alias": "Amount_Chi",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    }
+  ],
+  "id": "364c8aba-5143-4729-aa52-0c6b27a110dc",
+  "parentId": "f39d5a0b-9af9-452f-9471-acad465eed51",
+  "rootParentId": "09ce7e06-0523-4333-bb3e-574f6428a153",
+  "name": "Exchange_Chi - Amount",
+  "auto": true,
+  "contexts": [
+    "Exchange_Chi-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Welcome_Chi.Welcome_Chi-custom.Exchange_Chi-custom",
+      "affectedContexts": [
+        {
+          "name": "Exchange_Chi-Amount-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@Currencies_Chi",
+          "name": "Currencies_Chi_FROM",
+          "value": "#Exchange_Chi-followup.Currencies_Chi_FROM"
+        },
+        {
+          "dataType": "@Currencies_Chi",
+          "name": "Currencies_Chi_TO",
+          "value": "#Exchange_Chi-followup.Currencies_Chi_TO"
+        },
+        {
+          "dataType": "@sys.number",
+          "name": "Amount_Chi",
+          "value": "$Amount_Chi"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "你打算兌的  #Exchange_Chi-followup.Currencies_Chi_TO 的金額為$Amount_Chi 。\n你打算在何時在何地提取你的外匯呢? \n\nA. 28-05-2017 旺角\nB. 29-05-2017 中環\nC. 30-05-2017 觀塘"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

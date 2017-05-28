@@ -1,0 +1,102 @@
+{
+  "userSays": [
+    {
+      "id": "8483a500-5fdb-4615-95e5-b023dd6c2231",
+      "data": [
+        {
+          "text": "get started"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "8a596b08-e094-48d3-8977-02623af342d4",
+      "data": [
+        {
+          "text": "hi",
+          "alias": "hi",
+          "meta": "@Greetings",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "29e386a8-dece-4d08-8eec-d745ac8500dd",
+      "data": [
+        {
+          "text": "hello",
+          "alias": "hi",
+          "meta": "@Greetings",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "514383a3-c4de-4a15-863b-02a848a53b1f",
+      "data": [
+        {
+          "text": "good morning"
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    }
+  ],
+  "id": "8fa75826-3b39-418a-af48-b7f98ef67ce7",
+  "name": "hi",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "hi-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@Greetings",
+          "name": "hi",
+          "value": "$hi",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "platform": "facebook",
+          "speech": "Welcome to C9FX! We provide a streamlined foreign exchange experience, which currency would you like to exchange?"
+        },
+        {
+          "type": 2,
+          "platform": "facebook",
+          "title": "We currently support",
+          "replies": [
+            "HKD for JPY"
+          ]
+        },
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": [
+        "facebook"
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,78 @@
+{
+  "userSays": [
+    {
+      "id": "27acbe8a-9dff-4f6f-b571-962ed51a1578",
+      "data": [
+        {
+          "text": "晚安!"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "fee35f4d-9257-4af4-ba57-f79725711398",
+      "data": [
+        {
+          "text": "午安!"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c6a53ce7-da9c-42f1-bc2f-1ed0b2be6ca4",
+      "data": [
+        {
+          "text": "早晨!"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5638de6f-9d95-4e84-af53-a5256e039433",
+      "data": [
+        {
+          "text": "你好!"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "09ce7e06-0523-4333-bb3e-574f6428a153",
+  "name": "Welcome_Chi",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "Welcome_Chi-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@Greetings_Chi",
+          "name": "Greetings_Chi",
+          "value": "$Greetings_Chi"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "歡迎嚟到C9FX! 我有咩可以幫到你?"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

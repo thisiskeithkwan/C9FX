@@ -1,0 +1,24 @@
+{
+  "id": "e12d3e4f-88b5-4345-92b7-59254fa4c3f2",
+  "name": "Greetings",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "Hi",
+      "synonyms": [
+        "Hi",
+        "Hello"
+      ]
+    },
+    {
+      "value": "Do it again",
+      "synonyms": [
+        "Do it again",
+        "Restart",
+        "restart"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

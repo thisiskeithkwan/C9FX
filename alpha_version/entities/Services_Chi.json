@@ -1,0 +1,21 @@
+{
+  "id": "bc7a182c-44ca-4094-90e2-3d4d1993f94a",
+  "name": "Services_Chi",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "外匯",
+      "synonyms": [
+        "外匯"
+      ]
+    },
+    {
+      "value": "遠期外匯",
+      "synonyms": [
+        "遠期外匯"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

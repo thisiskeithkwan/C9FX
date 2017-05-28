@@ -1,0 +1,21 @@
+{
+  "id": "d08a81c5-8ee6-404d-897d-6ce5e1f27405",
+  "name": "Services",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "Exchange",
+      "synonyms": [
+        "Exchange"
+      ]
+    },
+    {
+      "value": "future",
+      "synonyms": [
+        "Future"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

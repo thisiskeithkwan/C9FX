@@ -1,0 +1,85 @@
+{
+  "userSays": [
+    {
+      "id": "4d64e2c5-8dc3-4f4f-b13e-e737297a0857",
+      "data": [
+        {
+          "text": "200",
+          "alias": "Amount",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "b9802fa1-12ca-4b14-a500-27577770efd8",
+  "parentId": "82030a10-2303-4e2e-a4a2-8586e88e52bd",
+  "rootParentId": "319b4ac5-1792-4c84-8b1c-15e531df272d",
+  "name": "Exchange - Amount",
+  "auto": true,
+  "contexts": [
+    "Exchange-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Welcome.Welcome-custom.Exchange-custom",
+      "affectedContexts": [
+        {
+          "name": "Exchange-Amount-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@sys.number",
+          "name": "Amount",
+          "value": "$Amount"
+        },
+        {
+          "dataType": "@Currencies",
+          "name": "Currencies_FROM",
+          "value": "#Exchange-followup.Currencies_FROM"
+        },
+        {
+          "dataType": "@Currencies",
+          "name": "Currencies_TO",
+          "value": "#Exchange-followup.Currencies_TO"
+        }
+      ],
+      "messages": [
+        {
+          "type": 1,
+          "platform": "facebook",
+          "subtitle": "The amount of #Exchange-followup.Currencies_TO you want to exchange is $Amount . When and where would you like to collect the foreign exchange?  A. 28-05-2017 MongKok B. 29-05-2017 Central C. 30-05-2017 KwunTong",
+          "buttons": []
+        },
+        {
+          "type": 2,
+          "platform": "facebook",
+          "title": "",
+          "replies": [
+            "28-05-2017 MongKok",
+            "29-05-2017 Central",
+            "30-05-2017 KwunTong"
+          ]
+        },
+        {
+          "type": 0,
+          "speech": "The amount of #Exchange-followup.Currencies_TO you want to exchange is $Amount .\nWhen and where would you like to collect the foreign exchange?\n\nA. 28-05-2017 MongKok\nB. 29-05-2017 Central\nC. 30-05-2017 KwunTong"
+        }
+      ],
+      "defaultResponsePlatforms": [
+        "facebook"
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,259 @@
+{
+  "userSays": [
+    {
+      "id": "24c41974-5173-43e1-8948-2efcc7e8ce8a",
+      "data": [
+        {
+          "text": "future",
+          "alias": "Services",
+          "meta": "@Services",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "YEN",
+          "alias": "Currencies_FROM",
+          "meta": "@Currencies",
+          "userDefined": false
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "USD",
+          "alias": "Currencies_TO",
+          "meta": "@Currencies",
+          "userDefined": false
+        },
+        {
+          "text": " in "
+        },
+        {
+          "text": "2 yr",
+          "alias": "Duration",
+          "meta": "@sys.duration",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "245246ac-ec92-40b8-ba5c-d9ca1db57ee7",
+      "data": [
+        {
+          "text": "exchange",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "futrue",
+          "alias": "Services",
+          "meta": "@Services",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "YEN",
+          "alias": "Currencies_FROM",
+          "meta": "@Currencies",
+          "userDefined": false
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "USD",
+          "alias": "Currencies_FROM1",
+          "meta": "@Currencies",
+          "userDefined": false
+        },
+        {
+          "text": " in "
+        },
+        {
+          "text": "2 yrs",
+          "alias": "Duration",
+          "meta": "@sys.duration",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "87d073f9-08d6-418b-a3fe-59a1c9abd852",
+      "data": [
+        {
+          "text": "Future",
+          "alias": "Services",
+          "meta": "@Services",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "HKD",
+          "alias": "Currencies_FROM",
+          "meta": "@Currencies",
+          "userDefined": false
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "JPY",
+          "alias": "Currencies_TO",
+          "meta": "@Currencies",
+          "userDefined": true
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "1 yr",
+          "alias": "Duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "79ad2358-5de9-4dea-ae91-2bb4530bcd02",
+      "data": [
+        {
+          "text": "Future",
+          "alias": "Services",
+          "meta": "@Services",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "HKD",
+          "alias": "Currencies_FROM",
+          "meta": "@Currencies",
+          "userDefined": false
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "JPY",
+          "alias": "Currencies_TO",
+          "meta": "@Currencies",
+          "userDefined": true
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "1 year",
+          "alias": "Duration",
+          "meta": "@sys.duration",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "c4c9983d-81ce-48f8-a0d3-83ce1b58a869",
+      "data": [
+        {
+          "text": " "
+        },
+        {
+          "text": "Future",
+          "alias": "Services",
+          "meta": "@Services",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "HKD",
+          "alias": "Currencies_FROM",
+          "meta": "@Currencies",
+          "userDefined": true
+        },
+        {
+          "text": " to "
+        },
+        {
+          "text": "JPY",
+          "alias": "Currencies_TO",
+          "meta": "@Currencies",
+          "userDefined": true
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "3 month",
+          "alias": "Duration",
+          "meta": "@sys.duration",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "b37d892d-3934-4090-81aa-879684895978",
+  "name": "Exchange-future",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Welcome.Welcome-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@Currencies",
+          "name": "Currencies_FROM",
+          "value": "$Currencies_FROM"
+        },
+        {
+          "dataType": "@Currencies",
+          "name": "Currencies_TO",
+          "value": "$Currencies_TO"
+        },
+        {
+          "dataType": "@Services",
+          "name": "Services",
+          "value": "$Services"
+        },
+        {
+          "dataType": "@sys.duration",
+          "name": "Duration",
+          "value": "$Duration"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "The $Duration price of $Currencies_FROM / $Currencies_TO is expected to be 14.5. If you would like to get more information about the contract, please click the following link (www.hangseng.com). The link will be automatically disabled after one day."
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

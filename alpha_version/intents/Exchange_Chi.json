@@ -1,0 +1,164 @@
+{
+  "userSays": [
+    {
+      "id": "7d4a2722-0e91-43aa-a240-b23b0b3fa5f5",
+      "data": [
+        {
+          "text": "日元",
+          "alias": "Currencies_Chi_FROM",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        },
+        {
+          "text": "兌"
+        },
+        {
+          "text": "港元",
+          "alias": "Currencies_Chi_TO",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "3ad3d246-820e-4398-8983-88e7126ce453",
+      "data": [
+        {
+          "text": "美元",
+          "alias": "Currencies_Chi_FROM",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        },
+        {
+          "text": "兌"
+        },
+        {
+          "text": "港元",
+          "alias": "Currencies_Chi_TO",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "ef84c2e0-c07a-463b-bb77-868451bfde5b",
+      "data": [
+        {
+          "text": "港元",
+          "alias": "Currencies_Chi_FROM",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        },
+        {
+          "text": "兌"
+        },
+        {
+          "text": "日元",
+          "alias": "Currencies_Chi_TO",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1
+    },
+    {
+      "id": "f7e3a880-5f17-40f6-85dd-9a01b8e000f2",
+      "data": [
+        {
+          "text": "美元",
+          "alias": "Currencies_Chi_FROM",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        },
+        {
+          "text": "兌"
+        },
+        {
+          "text": "日元",
+          "alias": "Currencies_Chi_TO",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2f3b3aed-38ac-49b1-a9e5-d52faeebd9be",
+      "data": [
+        {
+          "text": "日元",
+          "alias": "Currencies_Chi_FROM",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        },
+        {
+          "text": "兌"
+        },
+        {
+          "text": "港紙",
+          "alias": "Currencies_Chi_TO",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "f39d5a0b-9af9-452f-9471-acad465eed51",
+  "name": "Exchange_Chi",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "Exchange_Chi-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@Currencies_Chi",
+          "name": "Currencies_Chi_FROM",
+          "value": "$Currencies_Chi_FROM",
+          "isList": true
+        },
+        {
+          "dataType": "@Currencies_Chi",
+          "name": "Currencies_Chi_TO",
+          "value": "$Currencies_Chi_TO"
+        },
+        {
+          "name": "Rate",
+          "value": "14"
+        },
+        {
+          "dataType": "@Services_Chi",
+          "name": "Services_Chi",
+          "value": "$Services_Chi"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "$Currencies_Chi_FROM 兌 $Currencies_Chi_TO 的現貨價為 14,\n你打算兌多少?"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

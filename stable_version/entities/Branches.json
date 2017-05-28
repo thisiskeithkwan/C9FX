@@ -1,0 +1,33 @@
+{
+  "id": "ffb5d78b-769f-47e9-b9f1-feadb5e9c69f",
+  "name": "Branches",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "MongKok",
+      "synonyms": [
+        "MongKok"
+      ]
+    },
+    {
+      "value": "Kowloon",
+      "synonyms": [
+        "Kowloon"
+      ]
+    },
+    {
+      "value": "Kwun Tong",
+      "synonyms": [
+        "Kwun Tong"
+      ]
+    },
+    {
+      "value": "Central",
+      "synonyms": [
+        "Central"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

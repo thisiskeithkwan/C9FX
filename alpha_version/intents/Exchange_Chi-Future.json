@@ -1,0 +1,184 @@
+{
+  "userSays": [
+    {
+      "id": "3165574a-d976-4818-866b-04a52b04879b",
+      "data": [
+        {
+          "text": "兩年",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": true
+        },
+        {
+          "text": "期貨",
+          "meta": "@sys.ignore",
+          "userDefined": true
+        },
+        {
+          "text": "日元",
+          "alias": "Currencies_Chi_FROM",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        },
+        {
+          "text": "唱"
+        },
+        {
+          "text": "美元",
+          "alias": "Currencies_Chi_TO",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "250fa7dc-56d0-41a2-9d19-6b3bddfe89be",
+      "data": [
+        {
+          "text": "一年",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": true
+        },
+        {
+          "text": "期貨"
+        },
+        {
+          "text": "日元",
+          "alias": "Currencies_Chi_FROM",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        },
+        {
+          "text": "對"
+        },
+        {
+          "text": "美元",
+          "alias": "Currencies_Chi_TO",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5d2cbb75-6a3b-4a46-92ee-6b2b79c2da96",
+      "data": [
+        {
+          "text": "一年",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": true
+        },
+        {
+          "text": "期貨"
+        },
+        {
+          "text": "日元",
+          "alias": "Currencies_Chi_FROM",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        },
+        {
+          "text": "兌"
+        },
+        {
+          "text": "美元",
+          "alias": "Currencies_Chi_TO",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "a532989f-aea7-419c-863d-13884d540deb",
+      "data": [
+        {
+          "text": "兩年",
+          "alias": "duration",
+          "meta": "@sys.duration",
+          "userDefined": true
+        },
+        {
+          "text": "期貨"
+        },
+        {
+          "text": "港紙",
+          "alias": "Currencies_Chi_FROM",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        },
+        {
+          "text": "兌"
+        },
+        {
+          "text": "日元",
+          "alias": "Currencies_Chi_TO",
+          "meta": "@Currencies_Chi",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "ef5dda06-2b90-4626-9fb5-edc6184fbc69",
+  "name": "Exchange_Chi-Future",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "Exchange_Chi-Future-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@Currencies_Chi",
+          "name": "Currencies_Chi_FROM",
+          "value": "$Currencies_Chi_FROM"
+        },
+        {
+          "dataType": "@Currencies_Chi",
+          "name": "Currencies_Chi_TO",
+          "value": "$Currencies_Chi_TO"
+        },
+        {
+          "dataType": "@Services_Chi",
+          "name": "Services",
+          "value": "$Services_Chi"
+        },
+        {
+          "name": "Rate",
+          "value": "14.5"
+        },
+        {
+          "dataType": "@sys.duration",
+          "name": "duration",
+          "value": "$duration",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "$Duration 的 $Currencies_FROM 兌 $Currencies_TO 的外匯期貨預期為 14.5。如果你想取得更多關於外匯期貨的資料，請按以下鏈結 (www.hangseng.com)。 此鏈結將於一日內失效。"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

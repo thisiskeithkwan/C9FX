@@ -1,0 +1,45 @@
+{
+  "id": "02ccd8b4-b673-4b2f-bd15-13cae20c278b",
+  "name": "Currencies",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "HKD",
+      "synonyms": [
+        "HKD",
+        "Hong Kong Dollars"
+      ]
+    },
+    {
+      "value": "USD",
+      "synonyms": [
+        "USD",
+        "US Dollars, United States Dollars"
+      ]
+    },
+    {
+      "value": "JPY",
+      "synonyms": [
+        "JPY",
+        "Yens",
+        "Yen"
+      ]
+    },
+    {
+      "value": "EUR",
+      "synonyms": [
+        "EUR",
+        "Euros"
+      ]
+    },
+    {
+      "value": "AUD",
+      "synonyms": [
+        "AUD",
+        "Australian Dollars"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

@@ -1,0 +1,92 @@
+{
+  "userSays": [
+    {
+      "id": "d2c5a9ac-a1b4-40b7-a01a-76a1bafee56b",
+      "data": [
+        {
+          "text": "28-05-2017",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "place",
+          "alias": "Branches_Chi",
+          "meta": "@Branches_Chi",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "5b3b4463-cba3-4e46-a3e4-5f55cb1818f2",
+  "parentId": "364c8aba-5143-4729-aa52-0c6b27a110dc",
+  "rootParentId": "09ce7e06-0523-4333-bb3e-574f6428a153",
+  "name": "Exchange_Chi - time",
+  "auto": true,
+  "contexts": [
+    "Exchange_Chi-Amount-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Welcome_Chi.Welcome_Chi-custom.Exchange_Chi-custom.Exchange_Chi-Amount-custom",
+      "affectedContexts": [
+        {
+          "name": "Exchange_Chi-Amount-custom-followup",
+          "parameters": {},
+          "lifespan": 2
+        },
+        {
+          "name": "Exchange_Chi-time-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "dataType": "@Currencies_Chi",
+          "name": "Currencies_Chi_FROM",
+          "value": "#Exchange_Chi-Amount-followup.Currencies_Chi_FROM"
+        },
+        {
+          "dataType": "@Currencies_Chi",
+          "name": "Currencies_Chi_TO",
+          "value": "#Exchange_Chi-Amount-followup.Currencies_Chi_NO"
+        },
+        {
+          "dataType": "@sys.number",
+          "name": "Amount_Chi",
+          "value": "#Exchange_Chi-Amount-followup.Amount_Chi"
+        },
+        {
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date.original",
+          "isList": false
+        },
+        {
+          "dataType": "@Branches_Chi",
+          "name": "Branches_Chi",
+          "value": "$Branches_Chi",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": "你已經輸入下列資料.\n外匯: #Exchange_Chi-Amount-followup.Currencies_Chi_FROM 兌 #Exchange_Chi-Amount-followup.Currencies_Chi_TO\n兌換金額: #Exchange_Chi-Amount-followup.Amount_Chi\n提取時間: $date\n分行: $Branches_Chi\n\n假設所有資料正確，請輸入\"確認\"。若否，請按輸入鍵以及重新選擇新的預約時間。若你要取消服務，請輸入\"取消\"。"
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}
